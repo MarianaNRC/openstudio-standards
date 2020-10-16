@@ -39,21 +39,22 @@
  ! Yes,            !- Use Weather File Rain Indicators
  ! Yes;            !- Use Weather File Snow Indicators
  
- RunPeriod,
-  Weather Data,  !- Name
-  1,             !- Begin Month
-  1,             !- Begin Day of Month
-   ,             !- Begin Year
-  12,            !- End Month
-  31,            !- End Day of Month
-   ,             !- End Year
-  Saturday,      !- Day of Week for Start Day Saturday 
-  No,            !- Use Weather File Holidays and Special Days
-  No,            !- Use Weather File Daylight Saving Period
-  Yes,           !- Apply Weekend Holiday Rule
-  Yes,           !- Use Weather File Rain Indicators
-  Yes,           !- Use Weather File Snow Indicators
-  ;              !- Treat Weather as Acual
+ ! Version EnergyPlus release V9.0+
+ !RunPeriod,
+ !Weather Data,    !- Name
+ !  1,             !- Begin Month
+ !  1,             !- Begin Day of Month
+ !   ,             !- Begin Year
+ !  12,            !- End Month
+ !  31,            !- End Day of Month
+ !   ,             !- End Year
+ !Saturday,      !- Day of Week for Start Day
+ !  No,            !- Use Weather File Holidays and Special Days
+ !  No,            !- Use Weather File Daylight Saving Period
+ ! Yes,            !- Apply Weekend Holiday Rule
+ ! Yes,            !- Use Weather File Rain Indicators
+ ! Yes,            !- Use Weather File Snow Indicators
+ ! ;               !- Treat Weather as Acual
  
  Site:Location,
   Moncton-Greater Moncton LeBla_NB_CAN,     !- Location Name
