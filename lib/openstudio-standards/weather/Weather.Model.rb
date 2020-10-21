@@ -363,7 +363,8 @@ module BTAP
           data['cdd18'] = wf.cdd18
           data['latitude'] = wf.latitude
           data['longitude'] = wf.longitude
-          data['elevation'] = wf.delta_dry_bulb
+          data['elevation'] = wf.elevation
+          data['delta_drybulb'] = wf.delta_dry_bulb
           data['climate_zone'] = wf.climate_zone.force_encoding('ISO-8859-1').encode('UTF-8')
           data['standard'] = wf.standard
           data['summer_wet_months'] = wf.summer_wet_months.force_encoding('ISO-8859-1').encode('UTF-8')
@@ -377,6 +378,10 @@ module BTAP
           data['cooling_design_info[1]'] = wf.cooling_design_info[1]
           data['extremes_design_info[1]'] = wf.extremes_design_info[1]
           data['db990'] = wf.db990
+
+# TO update the weather data at 'WeatherData1.json' : https://github.com/NREL/openstudio-standards/blob/nrcan/lib/openstudio-standards/btap/WeatherData1.json
+# Get Fuel Type from 'regional_fuel_use.json': https://github.com/NREL/openstudio-standards/blob/nrcan/lib/openstudio-standards/standards/necb/NECB2011/data/regional_fuel_use.json
+# Copy add data based on fuel Type from 'fuel_type_sets.json': https://github.com/NREL/openstudio-standards/blob/nrcan/lib/openstudio-standards/standards/necb/NECB2011/data/fuel_type_sets.json
 
         end
         File.write(output_file,JSON.pretty_generate(data_array))
