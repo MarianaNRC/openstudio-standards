@@ -2281,7 +2281,7 @@ class NECB2011
 
     name_parts.each_with_index do |part, index|
       if part.include?('shr>') && sys_hr.is_a?(String)
-        # Skip updating 'shr>' part
+	    name_parts[i] = "shr>#{sys_hr}"
       elsif part.include?('sh>') && sys_htg.is_a?(String)
         name_parts[index] = "sh>#{sys_htg}"
       elsif part.include?('sc>') && sys_clg.is_a?(String)
