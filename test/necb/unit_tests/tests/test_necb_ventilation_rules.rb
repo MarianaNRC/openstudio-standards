@@ -68,6 +68,9 @@ class NECB_HVAC_Ventilation_Tests < Minitest::Test
     name_short = "#{vintage}_#{building_type}_ventilation"
     output_folder = method_output_folder("#{test_name}/#{name_short}/")
     logger.info "Starting individual test: #{name}"
+	# Create a directory to save a text file listing all the failed cases
+    failed_model_dir = File.join(@top_output_folder, test_name.to_s)
+    Dir.mkdir(failed_model_dir) unless Dir.exist?(failed_model_dir)
     # Wrap test in begin/rescue/ensure.
     begin
       epw_file = "CAN_ON_Toronto.Pearson.Intl.AP.716240_CWEC2016.epw"
@@ -78,10 +81,6 @@ class NECB_HVAC_Ventilation_Tests < Minitest::Test
                                                     primary_heating_fuel: fueltype,
                                                     sizing_run_dir: output_folder)
 
-      # Create a directory to save a text file listing all the failed cases
-      failed_model_dir = File.join(@top_output_folder, test_name.to_s)
-      puts "Failed model directory: #{failed_model_dir}"
-      Dir.mkdir(failed_model_dir) unless Dir.exist?(failed_model_dir)
     rescue StandardError => error
      # Create a txt file to indicate the buildings with failed model creation.
       File.open(File.join(failed_model_dir, 'model_creation_failed.txt'), 'a') do |file|
