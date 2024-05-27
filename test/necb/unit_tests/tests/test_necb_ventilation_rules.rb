@@ -78,13 +78,12 @@ class NECB_HVAC_Ventilation_Tests < Minitest::Test
                                                     primary_heating_fuel: fueltype,
                                                     sizing_run_dir: output_folder)
 
-      rescue StandardError => error
-      # Create directory if it doesn't exist
+      # Create a directory to save a text file listing all the failed cases
       failed_model_dir = File.join(@top_output_folder, test_name.to_s)
       puts "Failed model directory: #{failed_model_dir}"
       Dir.mkdir(failed_model_dir) unless Dir.exist?(failed_model_dir)
-
-      # Create a txt file to indicate the buildings with failed model creation.
+    rescue StandardError => error
+     # Create a txt file to indicate the buildings with failed model creation.
       File.open(File.join(failed_model_dir, 'model_creation_failed.txt'), 'a') do |file|
         file.write("Model creation failed for #{vintage} #{building_type}\n")
       end
