@@ -43,10 +43,10 @@ class NECB_HVAC_Ventilation_Tests < Minitest::Test
     File.write(test_result_file, JSON.pretty_generate(test_results))
     # Read expected results.
     file_name = File.join(@expected_results_folder, "#{file_root}-expected_results.json")
-    # expected_results = JSON.parse(File.read(file_name), { symbolize_names: true })
+    expected_results = JSON.parse(File.read(file_name), { symbolize_names: true })
     # Check if test results match expected.
-    # msg = "Ventilation test results do not match what is expected in test"
-    # compare_results(expected_results: expected_results, test_results: test_results, msg: msg, type: 'json_data')
+    msg = "Ventilation test results do not match what is expected in test"
+    compare_results(expected_results: expected_results, test_results: test_results, msg: msg, type: 'json_data')
     logger.info "Finished suite of tests for: #{__method__}"
   end
 
@@ -68,6 +68,7 @@ class NECB_HVAC_Ventilation_Tests < Minitest::Test
     name_short = "#{vintage}_#{building_type}_ventilation"
     output_folder = method_output_folder("#{test_name}/#{name_short}/")
     logger.info "Starting individual test: #{name}"
+	
 	# Create a directory to save a text file listing all the failed cases
     failed_model_dir = File.join(@top_output_folder, test_name.to_s)
     Dir.mkdir(failed_model_dir) unless Dir.exist?(failed_model_dir)
@@ -80,14 +81,14 @@ class NECB_HVAC_Ventilation_Tests < Minitest::Test
                                                     epw_file: epw_file,
                                                     primary_heating_fuel: fueltype,
                                                     sizing_run_dir: output_folder)
-
+													
     rescue StandardError => error
      # Create a txt file to indicate the buildings with failed model creation.
       File.open(File.join(failed_model_dir, 'model_creation_failed.txt'), 'a') do |file|
         file.write("Model creation failed for #{vintage} #{building_type}\n")
       end
       logger.error "#{__FILE__}::#{__method__} #{error.message}"
-      return {} # Return an empty hash to signify failure
+      return {}
     end
 
     # Extract the results for checking.
@@ -137,7 +138,6 @@ class NECB_HVAC_Ventilation_Tests < Minitest::Test
       end
     end
     logger.info "Completed individual test: #{name}"
-    # end
     return results
   end
 end
