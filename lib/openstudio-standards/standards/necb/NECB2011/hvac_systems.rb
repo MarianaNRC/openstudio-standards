@@ -117,14 +117,12 @@ class NECB2011
     # OpenStudio::logFree(OpenStudio::Info, "openstudio.standards.AirLoopHVAC", "For #{self.name}, ERV not applicable because it because it serves parking garage, warehouse, or multifamily.")
     # return false
     # end
-
     erv_required = nil
     # ERV not applicable for medical AHUs (AHU1 in Outpatient), per AIA 2001 - 7.31.D2.
     if air_loop_hvac.name.to_s.include? 'Outpatient F1'
       erv_required = false
       return erv_required
     end
-
     # ERV not applicable for medical AHUs, per AIA 2001 - 7.31.D2.
     if air_loop_hvac.name.to_s.include? 'VAV_ER'
       erv_required = false
@@ -133,7 +131,6 @@ class NECB2011
       erv_required = false
       return erv_required
     end
-
     # ERV Not Applicable for AHUs that have DCV
     # or that have no OA intake.
     controller_oa = nil
@@ -185,7 +182,8 @@ class NECB2011
     erv_cfm = nil
 
     # Determine if an ERV is required
-    # erv_required = nil
+    # erv_cfm = nil
+
     if erv_cfm.nil?
       OpenStudio.logFree(OpenStudio::Info, 'openstudio.standards.AirLoopHVAC', "For #{air_loop_hvac.name}, ERV not required based on #{(pct_oa * 100).round}% OA flow, design supply air flow of #{dsn_flow_cfm.round}cfm, and climate zone #{climate_zone}.")
       erv_required = false
@@ -197,76 +195,9 @@ class NECB2011
       erv_required = true
     end
 
-    # This code modifies erv_required for NECB2011
-    # Calculation of exhaust heat content and check whether it is > 150 kW
-
-    # get all zones in the model
-    zones = air_loop_hvac.thermalZones
-
-    # initialize counters
-    sum_zone_oa = 0.0
-    sum_zone_oa_times_heat_design_t = 0.0
-
-    # zone loop
-    zones.each do |zone|
-      # get design heat temperature for each zone; this is equivalent to design exhaust temperature
-      heat_design_t = 21.0
-      zone_thermostat = zone.thermostat.get
-      if zone_thermostat.to_ThermostatSetpointDualSetpoint.is_initialized
-        dual_thermostat = zone_thermostat.to_ThermostatSetpointDualSetpoint.get
-        if dual_thermostat.heatingSetpointTemperatureSchedule.is_initialized
-          htg_temp_sch = dual_thermostat.heatingSetpointTemperatureSchedule.get
-          htg_temp_sch_ruleset = htg_temp_sch.to_ScheduleRuleset.get
-          winter_dd_sch = htg_temp_sch_ruleset.winterDesignDaySchedule
-          heat_design_t = winter_dd_sch.values.max
-        end
-      end
-      # initialize counter
-      zone_oa = 0.0
-      # outdoor defined at space level; get OA flow for all spaces within zone
-      spaces = zone.spaces
-
-      # space loop
-      spaces.each do |space|
-        unless space.designSpecificationOutdoorAir.empty? # if empty, don't do anything
-          outdoor_air = space.designSpecificationOutdoorAir.get
-          # in bTAP, outdoor air specified as outdoor air per
-          oa_flow_per_floor_area = outdoor_air.outdoorAirFlowperFloorArea
-          oa_flow = oa_flow_per_floor_area * space.floorArea * zone.multiplier # oa flow for the space
-          zone_oa += oa_flow # add up oa flow for all spaces to get zone air flow
-        end
-        # space loop
-      end
-      sum_zone_oa += zone_oa # sum of all zone oa flows to get system oa flow
-      sum_zone_oa_times_heat_design_t += (zone_oa * heat_design_t) # calculated to get oa flow weighted average of design exhaust temperature
-      # zone loop
-    end
-
-    # Calculate average exhaust temperature (oa flow weighted average)
-    avg_exhaust_temp = sum_zone_oa_times_heat_design_t / sum_zone_oa
-
+    exhaust_heat_content = calculate_exhaust_heat(air_loop_hvac)
     # for debugging/testing
-    #      puts "average exhaust temp = #{avg_exhaust_temp}"
-    #      puts "sum_zone_oa = #{sum_zone_oa}"
-
-    # Get January winter design temperature
-    # get model weather file name
-    weather_file = BTAP::Environment::WeatherFile.new(air_loop_hvac.model.weatherFile.get.path.get)
-
-    # get winter(heating) design temp stored in array
-    # Note that the NECB2011 specifies using the 2.5% january design temperature
-    # The outdoor temperature used here is the 0.4% heating design temperature of the coldest month, available in stat file
-    outdoor_temp = weather_file.heating_design_info[1]
-
-    #      for debugging/testing
-    #      puts "outdoor design temp = #{outdoor_temp}"
-
-    # Calculate exhaust heat content
-    exhaust_heat_content = 0.00123 * sum_zone_oa * 1000.0 * (avg_exhaust_temp - outdoor_temp)
-
-    # for debugging/testing
-    #      puts "exhaust heat content = #{exhaust_heat_content}"
-
+    # puts "exhaust heat content = #{exhaust_heat_content}"
     # Modify erv_required based on exhaust heat content
     if exhaust_heat_content > 150.0
       erv_required = true
@@ -275,8 +206,85 @@ class NECB2011
       erv_required = false
       OpenStudio.logFree(OpenStudio::Info, 'openstudio.standards.AirLoopHVAC', "For #{air_loop_hvac.name}, ERV not required based on exhaust heat content.")
     end
-
     return erv_required
+   end
+  
+   def calculate_exhaust_heat(air_loop_hvac)
+    # Initialize counters
+    sum_zone_oa = 0.0
+    sum_zone_oa_times_heat_design_t = 0.0
+    exhaust_heat_content = 0.0
+
+    # Get all zones in the model
+    zones = air_loop_hvac.thermalZones
+
+    zones.each do |zone|
+      # Initialize variables
+      zone_oa = 0.0
+      heat_design_t = 21.0
+
+      zone.spaces.each do |space|
+        next if space.designSpecificationOutdoorAir.empty?
+        outdoor_air = space.designSpecificationOutdoorAir.get
+
+        # Initialize variables
+        outdoorAirFlowRate = 0.0
+        oa_flow_per_floor_area = 0.0
+        oa_flow_per_person = 0.0
+        oa_flow_ach = 0.0
+
+        # Assign values conditionally
+        outdoorAirFlowRate = outdoor_air.outdoorAirFlowRate * zone.multiplier if outdoor_air.outdoorAirFlowRate > 0.0
+        oa_flow_per_floor_area = outdoor_air.outdoorAirFlowperFloorArea * zone.floorArea * zone.multiplier if outdoor_air.outdoorAirFlowperFloorArea > 0.0
+        oa_flow_per_person = outdoor_air.outdoorAirFlowperPerson * zone.numberOfPeople * zone.multiplier if outdoor_air.outdoorAirFlowperPerson > 0.0
+        oa_flow_ach = outdoor_air.outdoorAirFlowAirChangesperHour * zone.volume / 3600.0 * zone.multiplier if outdoor_air.outdoorAirFlowAirChangesperHour > 0.0
+
+        # Calculate outdoor air flow based on method
+        if outdoor_air.outdoorAirMethod == "Sum"
+          zone_oa += outdoorAirFlowRate + oa_flow_per_floor_area + oa_flow_per_person + oa_flow_ach
+        elsif outdoor_air.outdoorAirMethod == "Maximum"
+          zone_oa += [outdoorAirFlowRate, oa_flow_per_floor_area, oa_flow_per_person, oa_flow_ach].max
+        else
+          # Handle unexpected outdoor air method
+          zone_oa += 0.0
+        end
+      end
+
+      # Get design heat temperature for each zone; this is equivalent to design exhaust temperature
+      if zone.thermostat.is_initialized
+        zone_thermostat = zone.thermostat.get
+        if zone_thermostat.to_ThermostatSetpointDualSetpoint.is_initialized
+          dual_thermostat = zone_thermostat.to_ThermostatSetpointDualSetpoint.get
+          if dual_thermostat.heatingSetpointTemperatureSchedule.is_initialized
+            htg_temp_sch = dual_thermostat.heatingSetpointTemperatureSchedule.get
+            htg_temp_sch_ruleset = htg_temp_sch.to_ScheduleRuleset.get
+            winter_dd_sch = htg_temp_sch_ruleset.winterDesignDaySchedule
+            heat_design_t = winter_dd_sch.values.max
+          end
+        end
+      end
+
+      # Add the zone_oa to the sum_zone_oa
+      sum_zone_oa += zone_oa
+
+      # Debugging output
+      puts "Zone: #{zone.name.get} | Zone OA: #{zone_oa} | Sum Zone OA: #{sum_zone_oa}"
+
+      # Calculate weighted average of design exhaust temperature
+      sum_zone_oa_times_heat_design_t += (zone_oa * heat_design_t)
+    end
+
+    # Calculate average exhaust temperature (OA flow weighted average)
+    avg_exhaust_temp = sum_zone_oa > 0 ? sum_zone_oa_times_heat_design_t / sum_zone_oa : 0.0
+
+    # Get January winter design temperature
+    weather_file = BTAP::Environment::WeatherFile.new(air_loop_hvac.model.weatherFile.get.path.get)
+    outdoor_temp = weather_file.heating_design_info[1]
+
+    # Calculate exhaust heat content
+    exhaust_heat_content = 0.00123 * sum_zone_oa * 1000.0 * (avg_exhaust_temp - outdoor_temp)
+
+    return exhaust_heat_content
   end
 
   # Add an ERV to this airloop.
