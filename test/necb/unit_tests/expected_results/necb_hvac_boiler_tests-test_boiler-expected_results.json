@@ -1152,7 +1152,7 @@
         "efficiency_metric": "thermal efficiency",
         "efficiency_value": 0.8,
         "Boiler-1": {
-          "name": "Secondary Boiler 450kBtu/hr 0.8 Thermal Eff",
+          "name": "Primary Boiler 450kBtu/hr 0.8 Thermal Eff",
           "boiler_capacity_kW": 132.0,
           "minimum_part_load_ratio": 0.0,
           "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
@@ -1167,7 +1167,7 @@
           ]
         },
         "Boiler-2": {
-          "name": "Primary Boiler 450kBtu/hr 0.8 Thermal Eff",
+          "name": "Secondary Boiler 450kBtu/hr 0.8 Thermal Eff",
           "boiler_capacity_kW": 132.0,
           "minimum_part_load_ratio": 0.0,
           "eff_curve_name": "BOILER-EFFFPLR-NECB2011",

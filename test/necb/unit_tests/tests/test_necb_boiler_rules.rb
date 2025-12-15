@@ -12,7 +12,7 @@ class NECB_HVAC_Boiler_Tests < Minitest::Test
   start_time = Time.now
   # Test to validate the boiler thermal efficiency generated against expected values.
   #  Makes use of the template design pattern with the work done by the do_* method below (i.e. 'do_' prepended to the current method name)
-  def test_boiler_efficiency
+  def test_boiler
     logger.info "Starting suite of tests for: #{__method__}"
 
     # Define test parameters that apply to all tests.
@@ -104,7 +104,7 @@ class NECB_HVAC_Boiler_Tests < Minitest::Test
   # @param test_case [Hash] has the specific test parameters.
   # @return results of this case.
   # @note Companion method to test_boiler_efficiency that runs a specific test. Called by do_test_cases in necb_helper.rb.
-  def do_test_boiler_efficiency(test_pars:, test_case:)
+  def do_test_boiler(test_pars:, test_case:)
 
     # Debug.
     logger.debug "test_pars: #{JSON.pretty_generate(test_pars)}"
@@ -182,7 +182,10 @@ class NECB_HVAC_Boiler_Tests < Minitest::Test
       efficiency_value: test_efficiency_value.signif
     }
 
-    boilers = model.getBoilerHotWaters.select { |boiler| boiler.nominalCapacity.to_f >= 0.1 }
+    boilers = model.getBoilerHotWaters
+                   .select { |boiler| boiler.nominalCapacity.to_f >= 0.1 }
+                   .sort_by { |boiler| boiler.name.to_s.include?('Primary') ? 0 : 1 }
+
     total_capacity = boilers.sum { |boiler| boiler.nominalCapacity.to_f / 1000.0 }
 
     boilers.each_with_index do |boiler, i|
