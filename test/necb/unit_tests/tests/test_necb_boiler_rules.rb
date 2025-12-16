@@ -9,7 +9,6 @@ class NECB_HVAC_Boiler_Tests < Minitest::Test
     define_std_ranges
   end
 
-  start_time = Time.now
   # Test to validate the boiler thermal efficiency generated against expected values.
   #  Makes use of the template design pattern with the work done by the do_* method below (i.e. 'do_' prepended to the current method name)
   def test_boiler
@@ -411,8 +410,4 @@ class NECB_HVAC_Boiler_Tests < Minitest::Test
     eff_curve_name = eff_curve.name.get
     return eff_curve_name, eff_curve_type, corr_coeff
   end
-
-  # Prints the test durations
-  end_time = Time.now
-  puts "Total test time: #{(end_time - start_time) / 60} minutes"
 end
