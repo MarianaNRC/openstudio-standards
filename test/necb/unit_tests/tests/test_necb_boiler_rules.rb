@@ -180,7 +180,6 @@ class NECB_HVAC_Boiler_Tests < Minitest::Test
       efficiency_metric: efficiency_metric,
       efficiency_value: test_efficiency_value.signif
     }
-
     boilers = model.getBoilerHotWaters
                    .select { |boiler| boiler.nominalCapacity.to_f >= 0.1 }
                    .sort_by { |boiler| boiler.name.to_s.include?('Primary') ? 0 : 1 }
@@ -188,17 +187,20 @@ class NECB_HVAC_Boiler_Tests < Minitest::Test
     total_capacity = boilers.sum { |boiler| boiler.nominalCapacity.to_f / 1000.0 }
 
     boilers.each_with_index do |boiler, i|
-      eff_curve_name, eff_curve_type, corr_coeff = get_boiler_eff_curve_data(boiler)
+      eff_curve = nil
+      if boiler.normalizedBoilerEfficiencyCurve.is_initialized
+        eff_curve = boiler.normalizedBoilerEfficiencyCurve.get
+        curve_data = get_curve_info(eff_curve)
+      end
+
       results["Boiler-#{i + 1}".to_sym] = {
-        name: boiler.name.to_s,
+        boiler_name: boiler.name.to_s,
+        boiler_eff: boiler.nominalThermalEfficiency,
         boiler_capacity_kW: (boiler.nominalCapacity.to_f / 1000.0).signif,
         minimum_part_load_ratio: boiler.minimumPartLoadRatio,
-        eff_curve_name: eff_curve_name,
-        eff_curve_type: eff_curve_type,
-        curve_coefficients: corr_coeff
+        curve_info: curve_data
       }
     end
-
     results[:All] = {
       total_capacity_kW: total_capacity.signif,
       number_of_boilers: boilers.size
@@ -321,93 +323,25 @@ class NECB_HVAC_Boiler_Tests < Minitest::Test
     # Extract the results for checking. There are always two boilers.
     results[:Reference] = reference
     boilers = model.getBoilerHotWaters
-    boilers.each do |boiler|
-      eff_curve_name, eff_curve_type, corr_coeff = get_boiler_eff_curve_data(boiler)
-      boiler_eff = boiler.nominalThermalEfficiency
-      boiler_name = boiler.name.get
-      results[boiler_name.to_sym] = {
-        boiler_name: boiler_name,
+    # Sort so that boilers with 'Primary' in their name come first
+    sorted_boilers = boilers.sort_by { |boiler| boiler.name.to_s.include?('Primary') ? 0 : 1 }
+    sorted_boilers.each_with_index do |boiler, i|
+      eff_curve = nil
+      if boiler.normalizedBoilerEfficiencyCurve.is_initialized
+        eff_curve = boiler.normalizedBoilerEfficiencyCurve.get
+        boiler_eff = boiler.nominalThermalEfficiency
+        curve_data = get_curve_info(eff_curve)
+      end
+
+      results["Boiler-#{i + 1}".to_sym] = {
+        name: boiler.name.to_s,
         boiler_eff: boiler_eff,
-        eff_curve_name: eff_curve_name,
-        eff_curve_type: eff_curve_type,
-        curve_coefficients: corr_coeff
+        minimum_part_load_ratio: boiler.minimumPartLoadRatio,
+        curve_info: curve_data
       }
     end
+
     logger.info "Completed individual test: #{name}"
     return results
-  end
-
-  # @note Helper method to return the part load curve data.
-  # @param boiler [OS::Boiler] an openstudio boiler.
-  # @return the efficiency curve name [String], curve type [String] and the curve coefficients [Array] (curve type dependent).
-  def get_boiler_eff_curve_data(boiler)
-    corr_coeff = []
-    eff_curve = nil
-    eff_curve_type = boiler.normalizedBoilerEfficiencyCurve.get.iddObjectType.valueName.to_s
-    case eff_curve_type
-    when "OS_Curve_Bicubic"
-      eff_curve = boiler.normalizedBoilerEfficiencyCurve.get.to_CurveBicubic.get
-      corr_coeff << eff_curve.coefficient1Constant
-      corr_coeff << eff_curve.coefficient2x
-      corr_coeff << eff_curve.coefficient3xPOW2
-      corr_coeff << eff_curve.coefficient4y
-      corr_coeff << eff_curve.coefficient5yPOW2
-      corr_coeff << eff_curve.coefficient6xTIMESY
-      corr_coeff << eff_curve.coefficient7xPOW3
-      corr_coeff << eff_curve.coefficient8yPOW3
-      corr_coeff << eff_curve.coefficient9xPOW2TIMESY
-      corr_coeff << eff_curve.coefficient10xTIMESYPOW2
-      corr_coeff << eff_curve.minimumValueofx
-      corr_coeff << eff_curve.maximumValueofx
-      corr_coeff << eff_curve.minimumValueofy
-      corr_coeff << eff_curve.maximumValueofy
-    when "OS_Curve_Biquadratic"
-      eff_curve = boiler.normalizedBoilerEfficiencyCurve.get.to_CurveBiquadratic.get
-      corr_coeff << eff_curve.coefficient1Constant
-      corr_coeff << eff_curve.coefficient2x
-      corr_coeff << eff_curve.coefficient3xPOW2
-      corr_coeff << eff_curve.coefficient4y
-      corr_coeff << eff_curve.coefficient5yPOW2
-      corr_coeff << eff_curve.coefficient6xTIMESY
-      corr_coeff << eff_curve.minimumValueofx
-      corr_coeff << eff_curve.maximumValueofx
-      corr_coeff << eff_curve.minimumValueofy
-      corr_coeff << eff_curve.maximumValueofy
-    when "OS_Curve_Cubic"
-      eff_curve = boiler.normalizedBoilerEfficiencyCurve.get.to_CurveCubic.get
-      corr_coeff << eff_curve.coefficient1Constant
-      corr_coeff << eff_curve.coefficient2x
-      corr_coeff << eff_curve.coefficient3xPOW2
-      corr_coeff << eff_curve.coefficient4xPOW3
-      corr_coeff << eff_curve.minimumValueofx
-      corr_coeff << eff_curve.maximumValueofx
-    when "OS_Curve_Linear"
-      eff_curve = boiler.normalizedBoilerEfficiencyCurve.get.to_CurveLinear.get
-      corr_coeff << eff_curve.coefficient1Constant
-      corr_coeff << eff_curve.coefficient2x
-      corr_coeff << eff_curve.minimumValueofx
-      corr_coeff << eff_curve.maximumValueofx
-    when "OS_Curve_Quadratic"
-      eff_curve = boiler.normalizedBoilerEfficiencyCurve.get.to_CurveQuadratic.get
-      corr_coeff << eff_curve.coefficient1Constant
-      corr_coeff << eff_curve.coefficient2x
-      corr_coeff << eff_curve.coefficient3xPOW2
-      corr_coeff << eff_curve.minimumValueofx
-      corr_coeff << eff_curve.maximumValueofx
-    when "OS_Curve_QuadraticLinear"
-      eff_curve = boiler.normalizedBoilerEfficiencyCurve.get.to_CurveQuadraticLinear.get
-      corr_coeff << eff_curve.coefficient1Constant
-      corr_coeff << eff_curve.coefficient2x
-      corr_coeff << eff_curve.coefficient3xPOW2
-      corr_coeff << eff_curve.coefficient4y
-      corr_coeff << eff_curve.coefficient5xTIMESY
-      corr_coeff << eff_curve.coefficient6xPOW2TIMESY
-      corr_coeff << eff_curve.minimumValueofx
-      corr_coeff << eff_curve.maximumValueofx
-      corr_coeff << eff_curve.minimumValueofy
-      corr_coeff << eff_curve.maximumValueofy
-    end
-    eff_curve_name = eff_curve.name.get
-    return eff_curve_name, eff_curve_type, corr_coeff
   end
 end
