@@ -16,6 +16,7 @@ class NECBRegressionHelper < Minitest::Test
     @model = nil
     @model_name = nil
     @run_simulation = false
+    @model_save = false
     @primary_heating_fuel = 'Electricity'
   end
 
@@ -25,6 +26,7 @@ class NECBRegressionHelper < Minitest::Test
                                        test_dir: @test_dir,
                                        expected_results_folder: @expected_results_folder,
                                        run_simulation: @run_simulation,
+                                       model_save: @model_save,
                                        primary_heating_fuel: @primary_heating_fuel)
 
     @building_type = building_type
@@ -66,26 +68,32 @@ class NECBRegressionHelper < Minitest::Test
   def osm_regression(expected_results_folder: @expected_results_folder)
     begin
       diffs = []
-      osm_results_folder = File.join(File.expand_path('..', expected_results_folder), 'output_osm')
-      idf_results_folder = File.join(File.expand_path('..', expected_results_folder), 'output_idf')
+      # Create the diff folder (needed for regression results)
       diff_results_folder = File.join(File.expand_path('..', expected_results_folder), 'output_diff')
-      [osm_results_folder, idf_results_folder, diff_results_folder].each do |folder|
-        FileUtils.mkdir_p(folder) unless Dir.exist?(folder)
+      FileUtils.mkdir_p(diff_results_folder) unless Dir.exist?(diff_results_folder)
+
+      # Only create OSM/IDF folders if model_save is true
+      if @model_save
+        osm_results_folder = File.join(File.expand_path('..', expected_results_folder), 'output_osm')
+        idf_results_folder = File.join(File.expand_path('..', expected_results_folder), 'output_idf')
+
+        [osm_results_folder, idf_results_folder].each do |folder|
+          FileUtils.mkdir_p(folder) unless Dir.exist?(folder)
+        end
+
+        test_osm_file = File.join(osm_results_folder, @model_name + '.osm')
+        test_idf_file = File.join(idf_results_folder, @model_name + '.idf')
+
+        BTAP::FileIO.save_osm(@model, test_osm_file)
+        logger.info("Saved test result OSM file to #{test_osm_file}")
+
+        BTAP::FileIO.save_idf(@model, test_idf_file)
+        logger.info("Saved test result IDF file to #{test_idf_file}")
+      else
+        logger.info("Skipping OSM/IDF save for #{@model_name} (model_save = false)")
       end
 
       expected_osm_file = File.join(expected_results_folder, @model_name + '.osm')
-      test_osm_file = File.join(osm_results_folder, @model_name + '.osm')
-      test_idf_file = File.join(idf_results_folder, @model_name + '.idf')
-
-      # Save test results
-      BTAP::FileIO.save_osm(@model, test_osm_file)
-      BTAP::FileIO.clean_osm_file(file_path: test_osm_file, output_path: test_osm_file)
-      @model = BTAP::FileIO.load_osm(test_osm_file)
-      logger.info("Saved test result OSM file to #{test_osm_file}")
-
-      BTAP::FileIO.save_idf(@model, test_idf_file)
-      logger.info("Saved test result IDF file to #{test_idf_file}")
-
       # Load expected OSM
       unless File.exist?(expected_osm_file)
         raise("Expected OSM path does not exist: #{expected_osm_file}")
