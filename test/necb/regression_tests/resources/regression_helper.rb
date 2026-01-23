@@ -71,6 +71,7 @@ class NECBRegressionHelper < Minitest::Test
       # Create the diff folder (needed for regression results)
       diff_results_folder = File.join(File.expand_path('..', expected_results_folder), 'output_diff')
       FileUtils.mkdir_p(diff_results_folder) unless Dir.exist?(diff_results_folder)
+      diff_file = File.join(diff_results_folder, "#{@model_name}_diffs.json")
 
       # Only create OSM/IDF folders if model_save is true
       if @model_save
@@ -111,7 +112,6 @@ class NECBRegressionHelper < Minitest::Test
     end
 
     # Write diff or error message
-    diff_file = File.join(diff_results_folder, "#{@model_name}_diffs.json")
     FileUtils.rm(diff_file) if File.exist?(diff_file)
     if diffs.size > 0
       File.write(diff_file, JSON.pretty_generate(diffs))
