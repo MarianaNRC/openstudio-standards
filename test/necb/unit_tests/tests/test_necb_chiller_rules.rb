@@ -160,7 +160,15 @@ class NECB_HVAC_Chiller_Test < Minitest::Test
       chiller_capacity = chiller.referenceCapacity.to_f / 1000.0
       total_capacity += chiller_capacity
 
-      eff_curve_name, eff_curve_type, corr_coeff = get_curve_info(chiller.coolingCapacityFunctionOfTemperature)
+      eff_curve = nil
+      curve_data = nil
+
+      eff_curve = chiller.coolingCapacityFunctionOfTemperature
+
+      if eff_curve
+        curve_data = get_curve_info(eff_curve)
+      end
+
       chiller_id = "Chiller-#{index + 1}"
 
       results[chiller_id.to_sym] = {
@@ -171,9 +179,7 @@ class NECB_HVAC_Chiller_Test < Minitest::Test
         COP_kW_kW: chiller.referenceCOP.to_f.signif(3),
         COP_kW_ton: OpenStudio.convert((1.0 / chiller.referenceCOP.to_f), '1/kW', '1/ton').get.signif,
         minimum_part_load_ratio: chiller.minimumPartLoadRatio.signif(3),
-        eff_curve_name: eff_curve_name,
-        eff_curve_type: eff_curve_type,
-        curve_coefficients: corr_coeff
+        curve_info: curve_data
       }
     end
 

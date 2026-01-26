@@ -14,19 +14,21 @@
           "COP_kW_kW": 4.4,
           "COP_kW_ton": 0.8,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -44,19 +46,21 @@
           "COP_kW_kW": 4.45,
           "COP_kW_ton": 0.7899,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -74,19 +78,21 @@
           "COP_kW_kW": 4.9,
           "COP_kW_ton": 0.718,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -104,19 +110,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -134,19 +142,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -157,19 +167,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -190,19 +202,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -220,19 +234,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -250,19 +266,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -280,19 +298,21 @@
           "COP_kW_kW": 5.86,
           "COP_kW_ton": 0.6005,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -310,19 +330,21 @@
           "COP_kW_kW": 5.86,
           "COP_kW_ton": 0.6005,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -333,19 +355,21 @@
           "COP_kW_kW": 5.86,
           "COP_kW_ton": 0.6005,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -366,19 +390,21 @@
           "COP_kW_kW": 4.4,
           "COP_kW_ton": 0.8,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -396,19 +422,21 @@
           "COP_kW_kW": 4.45,
           "COP_kW_ton": 0.7899,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -426,19 +454,21 @@
           "COP_kW_kW": 4.9,
           "COP_kW_ton": 0.718,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -456,19 +486,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -486,19 +518,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -509,19 +543,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -542,19 +578,21 @@
           "COP_kW_kW": 4.4,
           "COP_kW_ton": 0.8,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -572,19 +610,21 @@
           "COP_kW_kW": 4.45,
           "COP_kW_ton": 0.7899,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -602,19 +642,21 @@
           "COP_kW_kW": 4.9,
           "COP_kW_ton": 0.718,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -632,19 +674,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -662,19 +706,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -685,19 +731,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -722,19 +770,21 @@
           "COP_kW_kW": 4.4,
           "COP_kW_ton": 0.8,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -752,19 +802,21 @@
           "COP_kW_kW": 4.45,
           "COP_kW_ton": 0.7899,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -782,19 +834,21 @@
           "COP_kW_kW": 4.9,
           "COP_kW_ton": 0.718,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -812,19 +866,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -842,19 +898,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -865,19 +923,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -898,19 +958,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -928,19 +990,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -958,19 +1022,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -988,19 +1054,21 @@
           "COP_kW_kW": 5.86,
           "COP_kW_ton": 0.6005,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1018,19 +1086,21 @@
           "COP_kW_kW": 5.86,
           "COP_kW_ton": 0.6005,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -1041,19 +1111,21 @@
           "COP_kW_kW": 5.86,
           "COP_kW_ton": 0.6005,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1074,19 +1146,21 @@
           "COP_kW_kW": 4.4,
           "COP_kW_ton": 0.8,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1104,19 +1178,21 @@
           "COP_kW_kW": 4.45,
           "COP_kW_ton": 0.7899,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1134,19 +1210,21 @@
           "COP_kW_kW": 4.9,
           "COP_kW_ton": 0.718,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1164,19 +1242,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1194,19 +1274,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -1217,19 +1299,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1250,19 +1334,21 @@
           "COP_kW_kW": 4.4,
           "COP_kW_ton": 0.8,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1280,19 +1366,21 @@
           "COP_kW_kW": 4.45,
           "COP_kW_ton": 0.7899,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1310,19 +1398,21 @@
           "COP_kW_kW": 4.9,
           "COP_kW_ton": 0.718,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1340,19 +1430,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1370,19 +1462,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -1393,19 +1487,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1430,19 +1526,21 @@
           "COP_kW_kW": 4.4,
           "COP_kW_ton": 0.8,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1460,19 +1558,21 @@
           "COP_kW_kW": 4.45,
           "COP_kW_ton": 0.7899,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1490,19 +1590,21 @@
           "COP_kW_kW": 4.9,
           "COP_kW_ton": 0.718,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1520,19 +1622,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1550,19 +1654,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -1573,19 +1679,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1606,19 +1714,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1636,19 +1746,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1666,19 +1778,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1696,19 +1810,21 @@
           "COP_kW_kW": 5.86,
           "COP_kW_ton": 0.6005,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1726,19 +1842,21 @@
           "COP_kW_kW": 5.86,
           "COP_kW_ton": 0.6005,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -1749,19 +1867,21 @@
           "COP_kW_kW": 5.86,
           "COP_kW_ton": 0.6005,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1782,19 +1902,21 @@
           "COP_kW_kW": 4.4,
           "COP_kW_ton": 0.8,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1812,19 +1934,21 @@
           "COP_kW_kW": 4.45,
           "COP_kW_ton": 0.7899,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1842,19 +1966,21 @@
           "COP_kW_kW": 4.9,
           "COP_kW_ton": 0.718,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1872,19 +1998,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1902,19 +2030,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -1925,19 +2055,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1958,19 +2090,21 @@
           "COP_kW_kW": 4.4,
           "COP_kW_ton": 0.8,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -1988,19 +2122,21 @@
           "COP_kW_kW": 4.45,
           "COP_kW_ton": 0.7899,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2018,19 +2154,21 @@
           "COP_kW_kW": 4.9,
           "COP_kW_ton": 0.718,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2048,19 +2186,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2078,19 +2218,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -2101,19 +2243,21 @@
           "COP_kW_kW": 5.5,
           "COP_kW_ton": 0.6389,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2138,19 +2282,21 @@
           "COP_kW_kW": 4.51,
           "COP_kW_ton": 0.7792,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2168,19 +2314,21 @@
           "COP_kW_kW": 4.69,
           "COP_kW_ton": 0.7492,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2198,19 +2346,21 @@
           "COP_kW_kW": 5.18,
           "COP_kW_ton": 0.6793,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2228,19 +2378,21 @@
           "COP_kW_kW": 5.63,
           "COP_kW_ton": 0.6243,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2258,19 +2410,21 @@
           "COP_kW_kW": 5.63,
           "COP_kW_ton": 0.6243,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -2281,19 +2435,21 @@
           "COP_kW_kW": 5.63,
           "COP_kW_ton": 0.6243,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Scroll_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.94418,
-            "x": 0.0337102,
-            "x2": 0.0000975564,
-            "y": -0.00322114,
-            "y2": -0.0000491832,
-            "xy": -0.000177584,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Scroll_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.94418,
+              "x": 0.0337102,
+              "x2": 0.0000975564,
+              "y": -0.00322114,
+              "y2": -0.0000491832,
+              "xy": -0.000177584,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2314,19 +2470,21 @@
           "COP_kW_kW": 5.07,
           "COP_kW_ton": 0.6943,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2344,19 +2502,21 @@
           "COP_kW_kW": 5.07,
           "COP_kW_ton": 0.6943,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2374,19 +2534,21 @@
           "COP_kW_kW": 5.54,
           "COP_kW_ton": 0.6343,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2404,19 +2566,21 @@
           "COP_kW_kW": 5.92,
           "COP_kW_ton": 0.5943,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2434,19 +2598,21 @@
           "COP_kW_kW": 5.92,
           "COP_kW_ton": 0.5943,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -2457,19 +2623,21 @@
           "COP_kW_kW": 5.92,
           "COP_kW_ton": 0.5943,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.707908,
-            "x": -0.00200657,
-            "x2": -0.00259605,
-            "y": 0.0300588,
-            "y2": -0.00105643,
-            "xy": 0.0020457,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Centrifugal_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.707908,
+              "x": -0.00200657,
+              "x2": -0.00259605,
+              "y": 0.0300588,
+              "y2": -0.00105643,
+              "xy": 0.0020457,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2490,19 +2658,21 @@
           "COP_kW_kW": 4.51,
           "COP_kW_ton": 0.7792,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2520,19 +2690,21 @@
           "COP_kW_kW": 4.69,
           "COP_kW_ton": 0.7492,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2550,19 +2722,21 @@
           "COP_kW_kW": 5.18,
           "COP_kW_ton": 0.6793,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2580,19 +2754,21 @@
           "COP_kW_kW": 5.63,
           "COP_kW_ton": 0.6243,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2610,19 +2786,21 @@
           "COP_kW_kW": 5.63,
           "COP_kW_ton": 0.6243,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -2633,19 +2811,21 @@
           "COP_kW_kW": 5.63,
           "COP_kW_ton": 0.6243,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Screw_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 0.812998,
-            "x": -0.0142532,
-            "x2": -0.00161799,
-            "y": 0.0263844,
-            "y2": -0.00091543,
-            "xy": 0.00169601,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Screw_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 0.812998,
+              "x": -0.0142532,
+              "x2": -0.00161799,
+              "y": 0.0263844,
+              "y2": -0.00091543,
+              "xy": 0.00169601,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2666,19 +2846,21 @@
           "COP_kW_kW": 4.51,
           "COP_kW_ton": 0.7792,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2696,19 +2878,21 @@
           "COP_kW_kW": 4.69,
           "COP_kW_ton": 0.7492,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2726,19 +2910,21 @@
           "COP_kW_kW": 5.18,
           "COP_kW_ton": 0.6793,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2756,19 +2942,21 @@
           "COP_kW_kW": 5.63,
           "COP_kW_ton": 0.6243,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
@@ -2786,19 +2974,21 @@
           "COP_kW_kW": 5.63,
           "COP_kW_ton": 0.6243,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "Chiller-2": {
@@ -2809,19 +2999,21 @@
           "COP_kW_kW": 5.63,
           "COP_kW_ton": 0.6243,
           "minimum_part_load_ratio": 0.25,
-          "eff_curve_name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
-          "eff_curve_type": "OS_Curve_Biquadratic",
-          "curve_coefficients": {
-            "const": 1.03031,
-            "x": 0.0334698,
-            "x2": 0.00023639,
-            "y": -0.00729587,
-            "y2": -0.000023166,
-            "xy": -0.000148943,
-            "minX": 5.0,
-            "maxX": 10.0,
-            "minY": 24.0,
-            "maxY": 35.0
+          "curve_info": {
+            "curve name": "WaterCooled_Reciprocating_CAPFT_NECB2011",
+            "curve type": "OS_Curve_Biquadratic",
+            "coefficients": {
+              "const": 1.03031,
+              "x": 0.0334698,
+              "x2": 0.00023639,
+              "y": -0.00729587,
+              "y2": -0.000023166,
+              "xy": -0.000148943,
+              "minX": 5.0,
+              "maxX": 10.0,
+              "minY": 24.0,
+              "maxY": 35.0
+            }
           }
         },
         "All": {
