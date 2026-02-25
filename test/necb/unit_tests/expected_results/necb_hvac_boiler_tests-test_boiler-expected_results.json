@@ -1,0 +1,1471 @@
+{
+  "VarType": "vintage",
+  "NECB2011": {
+    "VarType": "fuel_type",
+    "Reference": "NECB 2011 p3 Table 5.2.12.1, 8.4.4.10.(6) clauses b,c,d",
+    "Electricity": {
+      "VarType": "TestCase",
+      "case-1": {
+        "name": "NECB2011_sys1_Boiler-Electricity_cap-10kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 10.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 1.0,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 34kBtu/hr 1.0 Thermal Eff",
+          "boiler_eff": 1.0,
+          "boiler_capacity_kW": 10.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 10.0,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "NaturalGas": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "NECB2011_sys1_Boiler-NaturalGas_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.85,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.85 AFUE",
+          "boiler_eff": 0.85,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "NECB2011_sys1_Boiler-NaturalGas_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.83,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.83 Thermal Eff",
+          "boiler_eff": 0.83,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.83 Thermal Eff",
+          "boiler_eff": 0.83,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "NECB2011_sys1_Boiler-NaturalGas_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.833,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.833 Combustion Eff",
+          "boiler_eff": 0.826,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "FuelOilNo2": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "NECB2011_sys1_Boiler-FuelOilNo2_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.847,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.847 AFUE",
+          "boiler_eff": 0.847,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "NECB2011_sys1_Boiler-FuelOilNo2_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.834,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.834 Thermal Eff",
+          "boiler_eff": 0.834,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.834 Thermal Eff",
+          "boiler_eff": 0.834,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "NECB2011_sys1_Boiler-FuelOilNo2_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.858,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.858 Combustion Eff",
+          "boiler_eff": 0.851,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    }
+  },
+  "NECB2015": {
+    "VarType": "fuel_type",
+    "Reference": "NECB 2015 p1 Table 5.2.12.1, 8.4.4.9.(6) clauses b,c,d",
+    "Electricity": {
+      "VarType": "TestCase",
+      "case-1": {
+        "name": "NECB2015_sys1_Boiler-Electricity_cap-10kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 10.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 1.0,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 34kBtu/hr 1.0 Thermal Eff",
+          "boiler_eff": 1.0,
+          "boiler_capacity_kW": 10.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 10.0,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "NaturalGas": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "NECB2015_sys1_Boiler-NaturalGas_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.85,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.85 AFUE",
+          "boiler_eff": 0.85,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "NECB2015_sys1_Boiler-NaturalGas_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.83,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.83 Thermal Eff",
+          "boiler_eff": 0.83,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.83 Thermal Eff",
+          "boiler_eff": 0.83,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "NECB2015_sys1_Boiler-NaturalGas_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.833,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.833 Combustion Eff",
+          "boiler_eff": 0.826,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "FuelOilNo2": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "NECB2015_sys1_Boiler-FuelOilNo2_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.847,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.847 AFUE",
+          "boiler_eff": 0.847,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "NECB2015_sys1_Boiler-FuelOilNo2_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.834,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.834 Thermal Eff",
+          "boiler_eff": 0.834,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.834 Thermal Eff",
+          "boiler_eff": 0.834,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "NECB2015_sys1_Boiler-FuelOilNo2_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.858,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.858 Combustion Eff",
+          "boiler_eff": 0.851,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    }
+  },
+  "NECB2017": {
+    "VarType": "fuel_type",
+    "Reference": "NECB 2017 p2 Table 5.2.12.1, 8.4.4.9.(6) clauses b,c,d",
+    "Electricity": {
+      "VarType": "TestCase",
+      "case-1": {
+        "name": "NECB2017_sys1_Boiler-Electricity_cap-10kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 10.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 1.0,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 34kBtu/hr 1.0 Thermal Eff",
+          "boiler_eff": 1.0,
+          "boiler_capacity_kW": 10.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 10.0,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "NaturalGas": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "NECB2017_sys1_Boiler-NaturalGas_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.85,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.85 AFUE",
+          "boiler_eff": 0.85,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "NECB2017_sys1_Boiler-NaturalGas_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.83,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.83 Thermal Eff",
+          "boiler_eff": 0.83,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.83 Thermal Eff",
+          "boiler_eff": 0.83,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "NECB2017_sys1_Boiler-NaturalGas_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.833,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.833 Combustion Eff",
+          "boiler_eff": 0.826,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "FuelOilNo2": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "NECB2017_sys1_Boiler-FuelOilNo2_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.847,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.847 AFUE",
+          "boiler_eff": 0.847,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "NECB2017_sys1_Boiler-FuelOilNo2_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.834,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.834 Thermal Eff",
+          "boiler_eff": 0.834,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.834 Thermal Eff",
+          "boiler_eff": 0.834,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "NECB2017_sys1_Boiler-FuelOilNo2_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.858,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.858 Combustion Eff",
+          "boiler_eff": 0.851,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    }
+  },
+  "NECB2020": {
+    "VarType": "fuel_type",
+    "Reference": "NECB 2020 p1 Table 5.2.12.1.-N, 8.4.4.9.(6) clauses b,c,d",
+    "Electricity": {
+      "VarType": "TestCase",
+      "case-1": {
+        "name": "NECB2020_sys1_Boiler-Electricity_cap-10kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 10.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 1.0,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 34kBtu/hr 1.0 Thermal Eff",
+          "boiler_eff": 1.0,
+          "boiler_capacity_kW": 10.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 10.0,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "NaturalGas": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "NECB2020_sys1_Boiler-NaturalGas_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.9,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.9 AFUE",
+          "boiler_eff": 0.9,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "NECB2020_sys1_Boiler-NaturalGas_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.9,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.9 Thermal Eff",
+          "boiler_eff": 0.9,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.9 Thermal Eff",
+          "boiler_eff": 0.9,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "NECB2020_sys1_Boiler-NaturalGas_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.9,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.9 Combustion Eff",
+          "boiler_eff": 0.893,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "FuelOilNo2": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "NECB2020_sys1_Boiler-FuelOilNo2_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.86,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.86 AFUE",
+          "boiler_eff": 0.86,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "NECB2020_sys1_Boiler-FuelOilNo2_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.87,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.87 Thermal Eff",
+          "boiler_eff": 0.87,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.87 Thermal Eff",
+          "boiler_eff": 0.87,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "NECB2020_sys1_Boiler-FuelOilNo2_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.88,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.88 Combustion Eff",
+          "boiler_eff": 0.873,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    }
+  },
+  "BTAPPRE1980": {
+    "VarType": "fuel_type",
+    "Electricity": {
+      "VarType": "TestCase",
+      "case-1": {
+        "name": "BTAPPRE1980_sys1_Boiler-Electricity_cap-10kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 10.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 1.0,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 34kBtu/hr 1.0 Thermal Eff",
+          "boiler_eff": 1.0,
+          "boiler_capacity_kW": 10.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 10.0,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "NaturalGas": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "BTAPPRE1980_sys1_Boiler-NaturalGas_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.8,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "BTAPPRE1980_sys1_Boiler-NaturalGas_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.8,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "BTAPPRE1980_sys1_Boiler-NaturalGas_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.807,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "FuelOilNo2": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "BTAPPRE1980_sys1_Boiler-FuelOilNo2_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.8,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "BTAPPRE1980_sys1_Boiler-FuelOilNo2_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.8,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "BTAPPRE1980_sys1_Boiler-FuelOilNo2_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.807,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    }
+  },
+  "BTAP1980TO2010": {
+    "VarType": "fuel_type",
+    "Electricity": {
+      "VarType": "TestCase",
+      "case-1": {
+        "name": "BTAP1980TO2010_sys1_Boiler-Electricity_cap-10kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 10.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 1.0,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 34kBtu/hr 1.0 Thermal Eff",
+          "boiler_eff": 1.0,
+          "boiler_capacity_kW": 10.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 10.0,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "NaturalGas": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "BTAP1980TO2010_sys1_Boiler-NaturalGas_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.8,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "BTAP1980TO2010_sys1_Boiler-NaturalGas_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.8,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "BTAP1980TO2010_sys1_Boiler-NaturalGas_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.807,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    },
+    "FuelOilNo2": {
+      "VarType": "TestCase",
+      "Single_Small_Boiler": {
+        "name": "BTAP1980TO2010_sys1_Boiler-FuelOilNo2_cap-43kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 43.96,
+        "efficiency_metric": "annual fuel utilization efficiency",
+        "efficiency_value": 0.8,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 150kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 43.96,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 43.96,
+          "number_of_boilers": 1
+        }
+      },
+      "Two_Equal_Sized_Boilers": {
+        "name": "BTAP1980TO2010_sys1_Boiler-FuelOilNo2_cap-264kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 264.0,
+        "efficiency_metric": "thermal efficiency",
+        "efficiency_value": 0.8,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 450kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "Boiler-2": {
+          "boiler_name": "Secondary Boiler 450kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 132.0,
+          "minimum_part_load_ratio": 0.0,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 264.0,
+          "number_of_boilers": 2
+        }
+      },
+      "Single_Large_Boiler": {
+        "name": "BTAP1980TO2010_sys1_Boiler-FuelOilNo2_cap-2510kW_MAU-true_MauCoil-Hot Water_Baseboard-Hot Water",
+        "tested_capacity_kW": 2510,
+        "efficiency_metric": "combustion efficiency",
+        "efficiency_value": 0.807,
+        "Boiler-1": {
+          "boiler_name": "Primary Boiler 8564kBtu/hr 0.8 Thermal Eff",
+          "boiler_eff": 0.8,
+          "boiler_capacity_kW": 2510,
+          "minimum_part_load_ratio": 0.25,
+          "curve_info": {
+            "curve name": "BOILER-EFFFPLR-NECB2011",
+            "curve type": "OS_Curve_Cubic",
+            "coefficients": {
+              "const": 0.3831,
+              "x": 2.0567,
+              "x2": -2.6469,
+              "x3": 1.2148,
+              "minX": 0.0,
+              "maxX": 1.0
+            }
+          }
+        },
+        "All": {
+          "total_capacity_kW": 2510,
+          "number_of_boilers": 1
+        }
+      }
+    }
+  }
+}

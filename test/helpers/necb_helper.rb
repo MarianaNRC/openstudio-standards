@@ -366,7 +366,13 @@ module NecbHelper
       }
     end
     eff_curve_name = eff_curve.name.get
-    return eff_curve_name, eff_curve_type, corr_coeff
+
+    curve_data = {
+      "curve name": eff_curve_name,
+      "curve type": eff_curve_type,
+      "coefficients": corr_coeff
+    }
+    return curve_data
   end
 
   # Check if two files are identical with some added smarts.
