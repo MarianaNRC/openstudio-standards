@@ -4,232 +4,196 @@
     "VarType": "TestCase",
     "NECB_Default": {
       "Reference": "Do nothing.",
-      "Boiler-1": {
-        "name": "Primary Boiler 5118kBtu/hr 0.833 Combustion Eff",
-        "boiler_eff": 0.826,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
-      },
-      "Boiler-2": {
-        "name": "Secondary Boiler 0kBtu/hr 0.85 AFUE",
+      "Secondary Boiler 0kBtu/hr 0.85 AFUE": {
+        "boiler_name": "Secondary Boiler 0kBtu/hr 0.85 AFUE",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
+      },
+      "Primary Boiler 5118kBtu/hr 0.833 Combustion Eff": {
+        "boiler_name": "Primary Boiler 5118kBtu/hr 0.833 Combustion Eff",
+        "boiler_eff": 0.826,
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 85% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
+      "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
+      "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 88% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
+      "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
+      "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 91% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
+      "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
+      "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 94% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
+      "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
+      "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler": {
       "Reference": "From analysis by Kamel Haddad based on Viessmann Vitocrossal 300 CT3-17 condensing boiler.",
-      "Boiler-1": {
-        "name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
+      "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
+      "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       }
     }
   },
@@ -237,232 +201,196 @@
     "VarType": "TestCase",
     "NECB_Default": {
       "Reference": "Do nothing.",
-      "Boiler-1": {
-        "name": "Primary Boiler 5118kBtu/hr 0.833 Combustion Eff",
-        "boiler_eff": 0.826,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
-      },
-      "Boiler-2": {
-        "name": "Secondary Boiler 0kBtu/hr 0.85 AFUE",
+      "Secondary Boiler 0kBtu/hr 0.85 AFUE": {
+        "boiler_name": "Secondary Boiler 0kBtu/hr 0.85 AFUE",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
+      },
+      "Primary Boiler 5118kBtu/hr 0.833 Combustion Eff": {
+        "boiler_name": "Primary Boiler 5118kBtu/hr 0.833 Combustion Eff",
+        "boiler_eff": 0.826,
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 85% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
+      "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
+      "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 88% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
+      "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
+      "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 91% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
+      "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
+      "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 94% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
+      "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
+      "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler": {
       "Reference": "From analysis by Kamel Haddad based on Viessmann Vitocrossal 300 CT3-17 condensing boiler.",
-      "Boiler-1": {
-        "name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
+      "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
+      "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       }
     }
   },
@@ -470,232 +398,196 @@
     "VarType": "TestCase",
     "NECB_Default": {
       "Reference": "Do nothing.",
-      "Boiler-1": {
-        "name": "Primary Boiler 5118kBtu/hr 0.833 Combustion Eff",
-        "boiler_eff": 0.826,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
-      },
-      "Boiler-2": {
-        "name": "Secondary Boiler 0kBtu/hr 0.85 AFUE",
+      "Secondary Boiler 0kBtu/hr 0.85 AFUE": {
+        "boiler_name": "Secondary Boiler 0kBtu/hr 0.85 AFUE",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
+      },
+      "Primary Boiler 5118kBtu/hr 0.833 Combustion Eff": {
+        "boiler_name": "Primary Boiler 5118kBtu/hr 0.833 Combustion Eff",
+        "boiler_eff": 0.826,
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 85% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
+      "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
+      "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 88% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
+      "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
+      "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 91% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
+      "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
+      "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 94% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
+      "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
+      "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler": {
       "Reference": "From analysis by Kamel Haddad based on Viessmann Vitocrossal 300 CT3-17 condensing boiler.",
-      "Boiler-1": {
-        "name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
+      "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
+      "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       }
     }
   },
@@ -703,232 +595,196 @@
     "VarType": "TestCase",
     "NECB_Default": {
       "Reference": "Do nothing.",
-      "Boiler-1": {
-        "name": "Primary Boiler 5118kBtu/hr 0.9 Combustion Eff",
-        "boiler_eff": 0.893,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
-      },
-      "Boiler-2": {
-        "name": "Secondary Boiler 0kBtu/hr 0.9 AFUE",
+      "Secondary Boiler 0kBtu/hr 0.9 AFUE": {
+        "boiler_name": "Secondary Boiler 0kBtu/hr 0.9 AFUE",
         "boiler_eff": 0.9,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
+      },
+      "Primary Boiler 5118kBtu/hr 0.9 Combustion Eff": {
+        "boiler_name": "Primary Boiler 5118kBtu/hr 0.9 Combustion Eff",
+        "boiler_eff": 0.893,
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 85% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
+      "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
+      "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 88% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
+      "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
+      "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 91% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
+      "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
+      "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 94% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
+      "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
+      "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler": {
       "Reference": "From analysis by Kamel Haddad based on Viessmann Vitocrossal 300 CT3-17 condensing boiler.",
-      "Boiler-1": {
-        "name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
+      "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
+      "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       }
     }
   },
@@ -936,232 +792,196 @@
     "VarType": "TestCase",
     "NECB_Default": {
       "Reference": "Do nothing.",
-      "Boiler-1": {
-        "name": "Primary Boiler 5118kBtu/hr 0.8 Thermal Eff",
+      "Secondary Boiler 0kBtu/hr 0.8 Thermal Eff": {
+        "boiler_name": "Secondary Boiler 0kBtu/hr 0.8 Thermal Eff",
         "boiler_eff": 0.8,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary Boiler 0kBtu/hr 0.8 Thermal Eff",
+      "Primary Boiler 5118kBtu/hr 0.8 Thermal Eff": {
+        "boiler_name": "Primary Boiler 5118kBtu/hr 0.8 Thermal Eff",
         "boiler_eff": 0.8,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 85% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
+      "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
+      "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 88% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
+      "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
+      "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 91% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
+      "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
+      "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 94% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
+      "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
+      "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler": {
       "Reference": "From analysis by Kamel Haddad based on Viessmann Vitocrossal 300 CT3-17 condensing boiler.",
-      "Boiler-1": {
-        "name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
+      "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
+      "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       }
     }
   },
@@ -1169,232 +989,196 @@
     "VarType": "TestCase",
     "NECB_Default": {
       "Reference": "Do nothing.",
-      "Boiler-1": {
-        "name": "Primary Boiler 5118kBtu/hr 0.8 Thermal Eff",
+      "Secondary Boiler 0kBtu/hr 0.8 Thermal Eff": {
+        "boiler_name": "Secondary Boiler 0kBtu/hr 0.8 Thermal Eff",
         "boiler_eff": 0.8,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary Boiler 0kBtu/hr 0.8 Thermal Eff",
+      "Primary Boiler 5118kBtu/hr 0.8 Thermal Eff": {
+        "boiler_name": "Primary Boiler 5118kBtu/hr 0.8 Thermal Eff",
         "boiler_eff": 0.8,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFFPLR-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 0.3831,
-            "x": 2.0567,
-            "x2": -2.6469,
-            "x3": 1.2148,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFFPLR-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          0.3831,
+          2.0567,
+          -2.6469,
+          1.2148,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 85% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
+      "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 85% Efficient Condensing Boiler 0kBtu/hr 0.85 Thermal Eff",
+      "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff": {
+        "boiler_name": "Primary NECB 85% Efficient Condensing Boiler 5118kBtu/hr 0.85 Thermal Eff",
         "boiler_eff": 0.85,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 88% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
+      "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 88% Efficient Condensing Boiler 0kBtu/hr 0.88 Thermal Eff",
+      "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff": {
+        "boiler_name": "Primary NECB 88% Efficient Condensing Boiler 5118kBtu/hr 0.88 Thermal Eff",
         "boiler_eff": 0.88,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 91% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
+      "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 91% Efficient Condensing Boiler 0kBtu/hr 0.91 Thermal Eff",
+      "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff": {
+        "boiler_name": "Primary NECB 91% Efficient Condensing Boiler 5118kBtu/hr 0.91 Thermal Eff",
         "boiler_eff": 0.91,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "NECB 94% Efficient Condensing Boiler": {
       "Reference": "From NECB 2011 and AHRI.",
-      "Boiler-1": {
-        "name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
+      "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary NECB 94% Efficient Condensing Boiler 0kBtu/hr 0.94 Thermal Eff",
+      "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff": {
+        "boiler_name": "Primary NECB 94% Efficient Condensing Boiler 5118kBtu/hr 0.94 Thermal Eff",
         "boiler_eff": 0.94,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-NECB2011",
-          "curve type": "OS_Curve_Cubic",
-          "coefficients": {
-            "const": 1.0186,
-            "x": 0.2426,
-            "x2": -0.5059,
-            "x3": 0.2465,
-            "minX": 0.0,
-            "maxX": 1.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-NECB2011",
+        "eff_curve_type": "OS_Curve_Cubic",
+        "curve_coefficients": [
+          1.0186,
+          0.2426,
+          -0.5059,
+          0.2465,
+          0.0,
+          1.0
+        ]
       }
     },
     "Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler": {
       "Reference": "From analysis by Kamel Haddad based on Viessmann Vitocrossal 300 CT3-17 condensing boiler.",
-      "Boiler-1": {
-        "name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
+      "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.25,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       },
-      "Boiler-2": {
-        "name": "Secondary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 0kBtu/hr 0.962 Thermal Eff",
+      "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff": {
+        "boiler_name": "Primary Viessmann Vitocrossal 300 CT3-17 96.2% Efficient Condensing Gas Boiler 5118kBtu/hr 0.962 Thermal Eff",
         "boiler_eff": 0.962,
-        "minimum_part_load_ratio": 0.0,
-        "curve_info": {
-          "curve name": "BOILER-EFFPLR-COND-VIESSMANN",
-          "curve type": "OS_Curve_Biquadratic",
-          "coefficients": {
-            "const": 1.067091396,
-            "x": -0.080046749,
-            "x2": 0.078581329,
-            "y": 0.000365501,
-            "y2": -0.0000045243,
-            "xy": -0.002185834,
-            "minX": 0.3,
-            "maxX": 1.0,
-            "minY": 40.0,
-            "maxY": 90.0
-          }
-        }
+        "eff_curve_name": "BOILER-EFFPLR-COND-VIESSMANN",
+        "eff_curve_type": "OS_Curve_Biquadratic",
+        "curve_coefficients": [
+          1.067091396,
+          -0.080046749,
+          0.078581329,
+          0.000365501,
+          -0.0000045243,
+          -0.002185834,
+          0.3,
+          1.0,
+          40.0,
+          90.0
+        ]
       }
     }
   }
