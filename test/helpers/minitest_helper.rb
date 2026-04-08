@@ -1,30 +1,29 @@
+=begin
 require 'simplecov'
-require 'simplecov-json'
-# Make sure SimpleCov knows that the project root is two levels up
-# from this file (i.e., the folder that contains lib/ and test/)
-SimpleCov.root File.expand_path('../..', __dir__)
-puts "SimpleCov.root+++++ = #{SimpleCov.root}"
+require 'codecov'
 
-# Configure SimpleCov (must run before any other requires)
-
-SimpleCov.coverage_dir('coverage')
-SimpleCov.formatters = SimpleCov::Formatter::MultiFormatter.new([
-                                                                  SimpleCov::Formatter::HTMLFormatter,
-                                                                  SimpleCov::Formatter::JSONFormatter
-                                                                ])
-
-SimpleCov.start do
-  add_filter '/vendor/'
-  add_filter '/test/'
-  add_group 'NECB Standards', 'lib/openstudio-standards/standards/necb/'
-  # Add groups for each NECB version
-  add_group 'NECB Rules 2011', 'lib/openstudio-standards/standards/necb/NECB2011/'
-  add_group 'NECB Rules 2015', 'lib/openstudio-standards/standards/necb/NECB2015/'
-  add_group 'NECB Rules 2017', 'lib/openstudio-standards/standards/necb/NECB2017/'
-  add_group 'NECB Rules 2020', 'lib/openstudio-standards/standards/necb/NECB2020/'
+# Get the code coverage in html for local viewing
+# and in JSON for CI codecov
+if ENV['CI'] == 'true'
+  SimpleCov.formatter = SimpleCov::Formatter::Codecov
+else
+  SimpleCov.formatter = SimpleCov::Formatter::HTMLFormatter
 end
 
-puts 'SimpleCov started” coverage report will be in coverage/index.html'
+# Ignore some of the code in coverage testing
+SimpleCov.start do
+  add_filter '/.idea/'
+  add_filter '/.yardoc/'
+  add_filter '/data/'
+  add_filter '/doc/'
+  add_filter '/docs/'
+  add_filter '/pkg/'
+  add_filter '/test/'
+  add_filter '/hvac_sizing/'
+  add_filter 'version'  
+end
+=end
+
 $LOAD_PATH.unshift File.expand_path('../../../lib', __FILE__)
 require 'minitest/autorun'
 if ENV['CI'] == 'true'
